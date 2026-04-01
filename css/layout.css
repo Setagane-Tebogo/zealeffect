@@ -1,0 +1,112 @@
+/* =============================================
+   LAYOUT.CSS — Containers, grids, utilities
+   ============================================= */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section-pad {
+  padding: var(--space-3xl) 0;
+}
+
+.dark-section {
+  background-color: var(--color-bg-2);
+}
+
+.center {
+  text-align: center;
+}
+
+/* ---- Shared text styles ---- */
+.section-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+  display: block;
+}
+
+.section-title {
+  font-size: clamp(var(--fs-3xl), 5vw, var(--fs-5xl));
+  color: var(--color-white);
+  margin-bottom: var(--space-md);
+  line-height: 1.05;
+}
+
+.section-title em {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-base);
+  padding: 0.8rem 2rem;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-dark);
+  border-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--color-accent);
+  box-shadow: var(--shadow-accent);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-white);
+  border-color: rgba(255,255,255,0.3);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn-lg {
+  font-size: var(--fs-lg);
+  padding: 1rem 2.8rem;
+}
+
+/* ---- Divider ---- */
+.divider {
+  width: 60px;
+  height: 3px;
+  background: var(--color-accent);
+  margin: var(--space-md) 0;
+}
+
+.divider.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-sm);
+  }
+
+  .section-pad {
+    padding: var(--space-2xl) 0;
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | ZealEffect</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span>📍 Limpopo | Johannesburg | Online</span>
+    <span>📞 <a href="tel:+27123456789">+27 12 345 6789</a></span>
+    <span>✉️ <a href="mailto:info@zealeffect.co.za">info@zealeffect.co.za</a></span>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-zeal">ZEAL</span><span class="logo-effect">EFFECT</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About Us ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="about.html#vision">Our Vision</a></li>
+          <li><a href="about.html#faq">FAQ</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="courses.html">Courses ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="courses.html#fulltime">Full-Time Programmes</a></li>
+          <li><a href="courses.html#parttime">Short Courses</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html#apply" class="nav-cta">Apply Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content reveal">
+      <p class="hero-eyebrow">Our World</p>
+      <h1>Student <em>Gallery</em></h1>
+      <p>See our students in action — in the studio, on set, on air, and at graduation.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY FILTERS -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="gallery-filters stagger-children" id="galleryFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="studio">Studio</button>
+        <button class="filter-btn" data-filter="film">Film &amp; TV</button>
+        <button class="filter-btn" data-filter="radio">Radio</button>
+        <button class="filter-btn" data-filter="graduation">Graduation</button>
+      </div>
+
+      <!-- Gallery grid — uses CSS background colours to simulate images until real photos added -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <div class="gallery-item reveal" data-category="studio">
+          <div class="gallery-thumb" style="--hue:80">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Sound Engineering Studio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="film">
+          <div class="gallery-thumb" style="--hue:270">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Film Production Set</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="graduation">
+          <div class="gallery-thumb" style="--hue:200">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Graduation Ceremony 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="radio">
+          <div class="gallery-thumb" style="--hue:30">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Radio Broadcasting Studio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="studio">
+          <div class="gallery-thumb" style="--hue:120">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Music Production Session</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="film">
+          <div class="gallery-thumb" style="--hue:300">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Camera Operations Class</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="graduation">
+          <div class="gallery-thumb" style="--hue:160">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Class of 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="studio">
+          <div class="gallery-thumb" style="--hue:50">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Live Sound Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="radio">
+          <div class="gallery-thumb" style="--hue:10">
+            <div class="gallery-overlay">
+              <span class="gallery-label">On-Air Session</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /gallery-grid -->
+
+      <p class="gallery-note reveal">
+        🖼️ <strong>Add your own photos:</strong> Replace the gallery placeholders in <code>gallery.html</code> with <code>&lt;img&gt;</code> tags pointing to your real images.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="cta-orb"></div>
+    <div class="container cta-inner reveal">
+      <h2>Want to Be in Our Next Gallery?</h2>
+      <p>Apply today and start your journey at ZealEffect — where your story gets told.</p>
+      <a href="about.html#apply" class="btn btn-primary btn-lg">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-zeal">ZEAL</span><span class="logo-effect">EFFECT</span></div>
+          <p>South Africa's creative media and music academy. Accredited. Affordable. Unstoppable.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">About ZealEffect</a></li>
+            <li><a href="about.html#vision">Vision &amp; Mission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="courses.html#fulltime">Full-Time Programmes</a></li>
+            <li><a href="courses.html#parttime">Short Courses</a></li>
+            <li><a href="about.html#apply">Apply Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 Limpopo | Johannesburg | Online</li>
+            <li>📞 <a href="tel:+27123456789">+27 12 345 6789</a></li>
+            <li>✉️ <a href="mailto:info@zealeffect.co.za">info@zealeffect.co.za</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 ZealEffect Media Academy. All rights reserved.</p>
+        <p>QCTO Accredited | MICT SETA Certified</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* =============================================
+   SECTIONS.CSS — About, VM, CTA, misc sections
+   ============================================= */
+
+/* ---- About Strip ---- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.about-text p {
+  color: var(--color-text-muted);
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-md);
+  line-height: 1.8;
+}
+
+.about-text .btn {
+  margin-top: var(--space-sm);
+}
+
+/* ---- Accreditation badges ---- */
+.about-badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.badge {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+  text-align: center;
+  transition: all var(--transition-base);
+  letter-spacing: 0.04em;
+}
+
+.badge:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-dim);
+  box-shadow: 0 0 20px var(--color-accent-dim);
+  transform: translateY(-2px);
+}
+
+.badge-image {
+  grid-column: span 2;
+  background: linear-gradient(135deg, var(--color-accent-dim), var(--color-secondary-dim));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  transition: all var(--transition-base);
+}
+
+.badge-image:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.badge-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.badge-image p {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-white);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ---- Vision & Mission ---- */
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.vm-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.vm-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-secondary));
+}
+
+.vm-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card), 0 0 40px var(--color-accent-dim);
+}
+
+.vm-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.vm-card h3 {
+  font-size: var(--fs-2xl);
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+}
+
+.vm-card p {
+  color: var(--color-text-muted);
+  font-size: var(--fs-md);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ---- CTA Banner ---- */
+.cta-banner {
+  position: relative;
+  background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #0f0f1a 100%);
+  padding: var(--space-3xl) 0;
+  overflow: hidden;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cta-orb {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(232,255,0,0.08) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.cta-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.cta-inner h2 {
+  font-size: clamp(var(--fs-3xl), 5vw, var(--fs-5xl));
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+}
+
+.cta-inner p {
+  font-size: var(--fs-lg);
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto var(--space-lg);
+  line-height: 1.7;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .vm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-badges {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .about-badges {
+    grid-template-columns: 1fr;
+  }
+
+  .badge-image {
+    grid-column: span 1;
+  }
+}

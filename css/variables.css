@@ -1,0 +1,75 @@
+/* =============================================
+   VARIABLES.CSS — Design tokens for ZealEffect
+   ============================================= */
+
+:root {
+
+  /* ---- COLORS ---- */
+  --color-bg:           #0a0a0f;
+  --color-bg-2:         #111118;
+  --color-bg-3:         #16161f;
+  --color-surface:      #1c1c27;
+  --color-border:       rgba(255, 255, 255, 0.08);
+
+  --color-accent:       #e8ff00;      /* electric yellow-green — the ZealEffect spark */
+  --color-accent-dim:   rgba(232, 255, 0, 0.12);
+  --color-accent-glow:  rgba(232, 255, 0, 0.35);
+
+  --color-secondary:    #a855f7;      /* violet for depth */
+  --color-secondary-dim: rgba(168, 85, 247, 0.12);
+
+  --color-text:         #e8e8f0;
+  --color-text-muted:   #8888a0;
+  --color-text-faint:   #44445a;
+
+  --color-white:        #ffffff;
+  --color-dark:         #0a0a0f;
+
+  /* ---- TYPOGRAPHY ---- */
+  --font-display:       'Bebas Neue', 'Impact', sans-serif;
+  --font-body:          'Outfit', 'Segoe UI', sans-serif;
+
+  --fs-xs:    0.75rem;
+  --fs-sm:    0.875rem;
+  --fs-base:  1rem;
+  --fs-md:    1.125rem;
+  --fs-lg:    1.25rem;
+  --fs-xl:    1.5rem;
+  --fs-2xl:   2rem;
+  --fs-3xl:   2.75rem;
+  --fs-4xl:   3.5rem;
+  --fs-5xl:   5rem;
+  --fs-6xl:   7rem;
+
+  /* ---- SPACING ---- */
+  --space-xs:   0.5rem;
+  --space-sm:   1rem;
+  --space-md:   1.5rem;
+  --space-lg:   2.5rem;
+  --space-xl:   4rem;
+  --space-2xl:  6rem;
+  --space-3xl:  8rem;
+
+  /* ---- BORDERS & RADIUS ---- */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-xl:  32px;
+  --radius-full: 9999px;
+
+  /* ---- SHADOWS ---- */
+  --shadow-sm:    0 2px 8px rgba(0,0,0,0.4);
+  --shadow-md:    0 8px 32px rgba(0,0,0,0.6);
+  --shadow-accent: 0 0 40px var(--color-accent-glow);
+  --shadow-card:  0 4px 24px rgba(0,0,0,0.5);
+
+  /* ---- TRANSITIONS ---- */
+  --transition-fast:    0.15s ease;
+  --transition-base:    0.3s ease;
+  --transition-slow:    0.6s ease;
+
+  /* ---- LAYOUT ---- */
+  --container-max:  1200px;
+  --navbar-height:  70px;
+  --topbar-height:  38px;
+}

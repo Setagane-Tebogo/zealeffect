@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | ZealEffect</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span>📍 Limpopo | Johannesburg | Online</span>
+    <span>📞 <a href="tel:+27123456789">+27 12 345 6789</a></span>
+    <span>✉️ <a href="mailto:info@zealeffect.co.za">info@zealeffect.co.za</a></span>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-zeal">ZEAL</span><span class="logo-effect">EFFECT</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About Us ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="about.html#vision">Our Vision</a></li>
+          <li><a href="about.html#mission">Our Mission</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html#faq">FAQ</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="courses.html">Courses ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="courses.html#fulltime">Full-Time Programmes</a></li>
+          <li><a href="courses.html#parttime">Short Courses</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html#apply" class="nav-cta">Apply Now</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content reveal">
+      <p class="hero-eyebrow">Get In Touch</p>
+      <h1>Contact <em>ZealEffect</em></h1>
+      <p>Questions about courses, admissions, or funding? Our team is ready to help you take the next step.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <h3>Reach Us</h3>
+
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h4>Limpopo Campus</h4>
+              <p>Nkowakowa, Limpopo, South Africa</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h4>Johannesburg Campus</h4>
+              <p>111 Smit Street, Braamfontein, Johannesburg</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">🌐</span>
+            <div>
+              <h4>Online / Distance Learning</h4>
+              <p>Enrol from anywhere in South Africa</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+27123456789">+27 12 345 6789</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:info@zealeffect.co.za">info@zealeffect.co.za</a></p>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <p>Follow us</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">FB</a>
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="YouTube">YT</a>
+              <a href="#" aria-label="TikTok">TK</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal-delay">
+          <h3>Send a Message</h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+27 ..." />
+            </div>
+            <div class="form-group">
+              <label for="subject">I'm interested in…</label>
+              <select id="subject" name="subject">
+                <option value="">Select a course or topic</option>
+                <option>Sound Engineering</option>
+                <option>Film &amp; TV Production</option>
+                <option>Music Production</option>
+                <option>Radio Broadcasting</option>
+                <option>Video Technology</option>
+                <option>DJ Techniques</option>
+                <option>Studio Work</option>
+                <option>Funding / Bursaries</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us more about yourself and what you're looking for…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg form-submit">Send Message</button>
+            <p class="form-note">We typically respond within 1 business day.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-zeal">ZEAL</span><span class="logo-effect">EFFECT</span></div>
+          <p>South Africa's creative media and music academy. Accredited. Affordable. Unstoppable.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">About ZealEffect</a></li>
+            <li><a href="about.html#vision">Vision &amp; Mission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="courses.html#fulltime">Full-Time Programmes</a></li>
+            <li><a href="courses.html#parttime">Short Courses</a></li>
+            <li><a href="about.html#apply">Apply Now</a></li>
+            <li><a href="#">Funding Options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 Limpopo | Johannesburg | Online</li>
+            <li>📞 <a href="tel:+27123456789">+27 12 345 6789</a></li>
+            <li>✉️ <a href="mailto:info@zealeffect.co.za">info@zealeffect.co.za</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 ZealEffect Media Academy. All rights reserved.</p>
+        <p>QCTO Accredited | MICT SETA Certified</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

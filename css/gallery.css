@@ -1,0 +1,173 @@
+/* =============================================
+   GALLERY.CSS — Gallery page styles
+   ============================================= */
+
+/* ---- Filter buttons ---- */
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xl);
+}
+
+.filter-btn {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 1.4rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+/* ---- Gallery grid (masonry-style) ---- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 220px;
+  gap: var(--space-sm);
+}
+
+/* ---- Gallery item ---- */
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.gallery-item.large  { grid-column: span 2; }
+.gallery-item.tall   { grid-row: span 2; }
+
+.gallery-item:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-md), 0 0 30px var(--color-accent-dim);
+  border-color: var(--color-accent);
+  z-index: 2;
+}
+
+/* ---- Placeholder (until real photos are added) ---- */
+.gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  background: linear-gradient(135deg, var(--color-bg-3), var(--color-surface));
+  transition: transform var(--transition-base);
+}
+
+.gallery-item:hover .gallery-placeholder {
+  transform: scale(1.08);
+}
+
+/* ---- Hover overlay ---- */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,10,15,0.9) 0%, transparent 60%);
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-sm) var(--space-md);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay span {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-white);
+  letter-spacing: 0.04em;
+}
+
+/* ---- Hidden items (filtered out) ---- */
+.gallery-item.hidden {
+  display: none;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+  }
+
+  .gallery-item.large { grid-column: span 2; }
+  .gallery-item.tall  { grid-row: span 1; }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
+  }
+}
+
+/* ---- Lightbox ---- */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.lightbox.open {
+  display: flex;
+  animation: fade-in 0.25s ease;
+}
+
+.lightbox-inner {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  color: var(--color-white);
+  font-size: var(--fs-xl);
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+  z-index: 2;
+}
+
+.lightbox-close:hover { opacity: 1; }
+
+.lightbox-content {
+  width: 100%;
+}
