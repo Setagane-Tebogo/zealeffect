@@ -52,8 +52,15 @@
   font-size: var(--fs-2xl);
   letter-spacing: 0.05em;
   display: flex;
-  align-items: baseline;
-  gap: 2px;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .logo-zeal  { color: var(--color-white); }
@@ -124,7 +131,7 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: var(--color-surface);

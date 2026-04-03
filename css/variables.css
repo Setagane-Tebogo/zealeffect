@@ -11,9 +11,9 @@
   --color-surface:      #1c1c27;
   --color-border:       rgba(255, 255, 255, 0.08);
 
-  --color-accent:       #e8ff00;      /* electric yellow-green — the ZealEffect spark */
-  --color-accent-dim:   rgba(232, 255, 0, 0.12);
-  --color-accent-glow:  rgba(232, 255, 0, 0.35);
+  --color-accent:       rgba(59, 130, 246, 0.6);      /* bright blue — the ZealEffect spark */
+  --color-accent-dim:   rgba(59, 130, 246, 0.12);
+  --color-accent-glow:  rgba(59, 130, 246, 0.35);
 
   --color-secondary:    #a855f7;      /* violet for depth */
   --color-secondary-dim: rgba(168, 85, 247, 0.12);
