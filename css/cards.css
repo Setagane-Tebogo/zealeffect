@@ -51,7 +51,7 @@
 
 .course-card h3 {
   font-size: var(--fs-xl);
-  color: var(--color-white);
+  color: var(--color-text);
   margin-bottom: var(--space-xs);
   position: relative;
   z-index: 1;

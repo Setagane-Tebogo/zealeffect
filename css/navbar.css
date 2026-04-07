@@ -17,7 +17,7 @@
 }
 
 .topbar a {
-  color: var(--color-accent);
+  color: var(--color-offshore);
   transition: opacity var(--transition-fast);
 }
 
@@ -31,9 +31,7 @@
   top: 0;
   z-index: 1000;
   height: var(--navbar-height);
-  background: rgba(10, 10, 15, 0.92);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: #ffffff;
   border-bottom: 1px solid var(--color-border);
   display: flex;
   align-items: center;
@@ -63,7 +61,7 @@
   border-radius: 8px;
 }
 
-.logo-zeal  { color: var(--color-white); }
+.logo-zeal  { color: var(--color-text); }
 .logo-effect { color: var(--color-accent); }
 
 .footer-logo {
@@ -97,7 +95,7 @@
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--color-white);
+  color: var(--color-text);
 }
 
 .nav-links a.active::after {

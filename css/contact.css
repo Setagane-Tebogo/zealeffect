@@ -14,7 +14,7 @@
 .contact-info h3,
 .contact-form-wrap h3 {
   font-size: var(--fs-2xl);
-  color: var(--color-white);
+  color: var(--color-text);
   margin-bottom: var(--space-lg);
 }
 
@@ -45,7 +45,7 @@
   font-family: var(--font-body);
   font-size: var(--fs-sm);
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-text);
   margin-bottom: 2px;
 }
 

@@ -25,7 +25,7 @@
 
     const mailSubject = `[ZealEffect] ${subject} - ${firstName} ${lastName}`;
     const mailBody = `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nInterest: ${subject}\n\nMessage:\n${message}\n\nSent via ZealEffect website contact form.`;
-    const mailto = `mailto:masiyateb@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+    const mailto = `mailto:queries@zealeffect.co.za?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
 
     window.location.href = mailto;
 

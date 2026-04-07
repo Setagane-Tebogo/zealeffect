@@ -31,7 +31,7 @@
 
 .page-hero-content h1 {
   font-size: clamp(var(--fs-3xl), 6vw, var(--fs-5xl));
-  color: var(--color-white);
+  color: var(--color-text);
   margin: var(--space-xs) 0 var(--space-sm);
 }
 
@@ -91,7 +91,7 @@
   font-family: var(--font-body);
   font-size: var(--fs-base);
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-text);
   margin-bottom: 2px;
 }
 
@@ -124,7 +124,7 @@
   font-family: var(--font-body);
   font-size: var(--fs-md);
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-text);
   padding: var(--space-md) var(--space-lg);
   cursor: pointer;
   list-style: none;

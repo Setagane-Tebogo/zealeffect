@@ -35,7 +35,7 @@
 
 .section-title {
   font-size: clamp(var(--fs-3xl), 5vw, var(--fs-5xl));
-  color: var(--color-white);
+  color: var(--color-text);
   margin-bottom: var(--space-md);
   line-height: 1.05;
 }
@@ -73,8 +73,8 @@
 
 .btn-outline {
   background: transparent;
-  color: var(--color-white);
-  border-color: rgba(255,255,255,0.3);
+  color: var(--color-text);
+  border-color: rgba(0,0,0,0.3);
 }
 
 .btn-outline:hover {

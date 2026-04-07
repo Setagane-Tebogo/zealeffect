@@ -5,25 +5,27 @@
 :root {
 
   /* ---- COLORS ---- */
-  --color-bg:           #0a0a0f;
-  --color-bg-2:         #111118;
-  --color-bg-3:         #16161f;
-  --color-surface:      #1c1c27;
-  --color-border:       rgba(255, 255, 255, 0.08);
+  --color-bg:           #ffffff;
+  --color-bg-2:         #ffffff;
+  --color-bg-3:         #ffffff;
+  --color-surface:      #ffffff;
+  --color-border:       rgba(0, 0, 0, 0.1);
 
-  --color-accent:       rgba(59, 130, 246, 0.6);      /* bright blue — the ZealEffect spark */
-  --color-accent-dim:   rgba(59, 130, 246, 0.12);
-  --color-accent-glow:  rgba(59, 130, 246, 0.35);
+  --color-accent:       rgba(59, 130, 246, 0.8);      /* bright blue — the ZealEffect spark */
+  --color-accent-dim:   rgba(59, 130, 246, 0.1);
+  --color-accent-glow:  rgba(59, 130, 246, 0.2);
 
-  --color-secondary:    #a855f7;      /* violet for depth */
-  --color-secondary-dim: rgba(168, 85, 247, 0.12);
+  --color-secondary:    #6c757d;      /* grey for depth */
+  --color-secondary-dim: rgba(108, 117, 125, 0.1);
 
-  --color-text:         #e8e8f0;
-  --color-text-muted:   #8888a0;
-  --color-text-faint:   #44445a;
+  --color-offshore:     #dc3545;      /* red for offshore */
+
+  --color-text:         #000000;
+  --color-text-muted:   #333333;
+  --color-text-faint:   #666666;
 
   --color-white:        #ffffff;
-  --color-dark:         #0a0a0f;
+  --color-dark:         #000000;
 
   /* ---- TYPOGRAPHY ---- */
   --font-display:       'Bebas Neue', 'Impact', sans-serif;

@@ -96,7 +96,7 @@
   font-family: var(--font-body);
   font-size: var(--fs-sm);
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-text);
   letter-spacing: 0.04em;
 }
 
@@ -156,7 +156,7 @@
   position: absolute;
   top: -2.5rem;
   right: 0;
-  color: var(--color-white);
+  color: var(--color-text);
   font-size: var(--fs-xl);
   background: none;
   border: none;
