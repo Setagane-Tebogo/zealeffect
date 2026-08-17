@@ -1,244 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | ZealEffect</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/sections.css" />
-  <link rel="stylesheet" href="css/cards.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-  <link rel="stylesheet" href="css/about.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Mafosholo Shuttle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- TOP BAR -->
-  <div class="topbar">
-    <span>📍 Limpopo | Johannesburg | Online</span>
-    <span>📞 <a href="tel:+27609556679">+27 60 955 6679</a></span>
-    <span>✉️ <a href="mailto:queries@zealeffect.co.za">queries@zealeffect.co.za</a></span>
-  </div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <a href="index.html" class="logo">
-      <img src="LOGO.png" alt="ZealEffect logo" class="logo-img" />
-      
-    </a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo"><span class="badge">MS</span> Mafosholo</a>
+    <ul class="navlinks">
       <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="about.html" class="active">About Us ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="#vision">Our Vision</a></li>
-          <li><a href="#mission">Our Mission</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="courses.html">Courses ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="courses.html#fulltime">Full-Time Programmes</a></li>
-          <li><a href="courses.html#parttime">Short Courses</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html#apply" class="nav-cta">Apply Now</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
-
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="page-hero-content reveal">
-      <p class="hero-eyebrow">Our Story</p>
-      <h1>About <em>ZealEffect</em></h1>
-      <p>Empowering South Africa's next generation of creatives through world-class, affordable media and music education.</p>
+    <div class="nav-actions">
+      <a class="nav-phone" href="tel:++27601948503">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 极客时间
+      </a>
+      <a href="book.html" class="btn btn-amber btn-sm">Book Now</a>
+      <button class="navtoggle" id="navToggle" aria-label="Menu">☰</button>
     </div>
-  </section>
+  </div>
+</header>
 
-  <!-- WHO WE ARE -->
-  <section class="section-pad">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p class="section-eyebrow">Who We Are</p>
-          <h2 class="section-title">A Creative Hub for<br/><em>Media &amp; Music</em></h2>
-          <p>ZealEffect is a fast-growing, QCTO-accredited media and music academy established to promote and provide quality Media, IT, and Music education at low cost — particularly to previously disadvantaged communities addressing educational training backlogs.</p>
-          <p>We offer National Diplomas, National Certificates, FET Certificates, and Professional Masterclass courses in Sound Engineering, Studio Work, Film & Television Production, Radio Production, Video Technology, Music Performance, and a range of online distance courses.</p>
-          <p>If you are passionate about music, creative design, or the media industry — ZealEffect will help you build the foundation you need to make a success of your chosen career, in a creative environment full of like-minded individuals.</p>
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">About Us</div>
+      <h2>Five years on the road</h2>
+      <p>Mafosholo Shuttle started with a single sedan and a phone that never stopped ringing. It's grown into a fleet that covers Limpopo, Gauteng and the routes between them.</p>
+    </div>
+
+    <div class="about-top">
+      <div class="mv-grid">
+        <div class="mv-card">
+          <h3>Mission</h3>
+          <p>Get every passenger to their destination safely, on time, and stress-free whether it’s a long-distance journey or a special event across town.</p>
         </div>
-        <div class="about-badges reveal-delay">
-          <div class="badge">QCTO Accredited</div>
-          <div class="badge">MICT SETA Certified</div>
-          <div class="badge">Dept. of Higher Ed</div>
-          <div class="badge">Steinberg International</div>
-          <div class="badge-image">
-            <div class="badge-icon">🎬</div>
-            <p>Real Studios.<br/>Real Experience.</p>
-          </div>
+        <div class="mv-card">
+          <h3>Vision</h3>
+          <p>To be the shuttle service that Limpopo businesses and travellers trust and book without a second thought, because we deliver every journey safely, reliably, and on time.
+</p>
+        </div>
+        <div class="mv-card" style="grid-column:1/-1;">
+          <h3>How we operate</h3>
+          <p>
+            All bookings go to one dispatch system. Our driver handles each trip and we confirm every booking by WhatsApp or Phone Call before pickup, so everything is clear and organised 
+          </p>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- VISION & MISSION -->
-  <section id="vision" class="section-pad dark-section">
-    <div class="container">
-      <p class="section-eyebrow center">What Drives Us</p>
-      <h2 class="section-title center">Vision &amp; <em>Mission</em></h2>
-      <div class="vm-grid" style="margin-top: 3rem;">
-        <div class="vm-card reveal" id="mission">
-          <div class="vm-icon">🌍</div>
-          <h3>Our Vision</h3>
-          <p>To offer all — irrespective of race, religion, or background — a quality education in the field of media, IT, and music technology. To be one of the leading quality education providers in Africa, offering NQF-approved and internationally accredited qualifications.</p>
-        </div>
-        <div class="vm-card reveal">
-          <div class="vm-icon">🚀</div>
-          <h3>Our Mission</h3>
-          <p>To develop individuals who are skilled in their fields of study, productive, and innovative with a broad world view and respect for human values. Delivering to target communities the relevant, market-based training programmes that launch real careers.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ACCREDITATION -->
-  <section class="section-pad">
-    <div class="container">
-      <p class="section-eyebrow center">Official Recognition</p>
-      <h2 class="section-title center">Fully <em>Accredited</em></h2>
-      <div class="accreditation-list stagger-children" style="margin-top:3rem">
-        <div class="accred-item">
-          <span class="accred-badge">QCTO</span>
-          <div>
-            <h4>QCTO Private Education &amp; Skill Development Provider</h4>
-            <p>Accreditation No. (SDP/1220/19/00139)</p>
+    <div class="about-lower">
+      <div>
+        <h3 style="font-size:20px;color:var(--off);">Professional driver</h3>
+        <p style="color:var(--muted);font-size:14.5px;max-width:480px;">Our driver is professional, reliable, and committed to making sure every passenger has a safe and comfortable trip.</p>
+        <div class="driver-badges">
+          <div class="badge-item">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+            <span>PDP-licensed</span>
           </div>
-        </div>
-        <div class="accred-item">
-          <span class="accred-badge">MICT SETA</span>
-          <div>
-            <h4>Education &amp; Training Provider</h4>
-            <p>Accreditation No. (2014/07/174)</p>
+          <div class="badge-item">
+            <svg viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
+            <span>Background-checked</span>
           </div>
-        </div>
-        <div class="accred-item">
-          <span class="accred-badge">DHE</span>
-          <div>
-            <h4>Department of Higher Education Examination Centre</h4>
-            <p>Registration No: 899992827</p>
-          </div>
-        </div>
-        <div class="accred-item">
-          <span class="accred-badge">Steinberg</span>
-          <div>
-            <h4>Steinberg International Certified Training Centre</h4>
-            <p>Global music technology certification</p>
+          <div class="badge-item">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+            <span>5+ yrs experience avg.</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- APPLY CTA -->
-  <section id="apply" class="cta-banner">
-    <div class="cta-orb"></div>
-    <div class="container cta-inner reveal">
-      <h2>Are You Ready to Apply?</h2>
-      <p>Enrol now with a college that helps you understand how the media industry works, assists with internships, and builds the foundation for your chosen career.</p>
-      <a href="courses.html" class="btn btn-primary btn-lg">Get Started</a>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="section-pad dark-section">
-    <div class="container">
-      <p class="section-eyebrow center">Got Questions?</p>
-      <h2 class="section-title center"><em>FAQ</em></h2>
-      <div class="faq-list" style="margin-top:3rem; max-width:800px; margin-left:auto; margin-right:auto;">
-        <details class="faq-item reveal">
-          <summary>Who can apply to ZealEffect?</summary>
-          <p>Anyone who is passionate about media, music, or creative technology — regardless of race, religion, or background. We welcome school leavers, career changers, and working professionals.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Are your qualifications nationally recognised?</summary>
-          <p>Yes. All our full-time programmes are QCTO-accredited and registered with the Department of Higher Education. Short courses carry Steinberg and MICT SETA certification.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Do you offer funding or payment plans?</summary>
-          <p>Yes — we offer various funding options and flexible payment arrangements. Contact us or visit our Funding page for details.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Do you offer online or distance learning?</summary>
-          <p>Yes. We offer a range of online and distance courses alongside our campus-based programmes. Reach out to us to find out which options suit your schedule.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Will I get studio time during my course?</summary>
-          <p>Absolutely. Hands-on studio experience is central to what we offer. Students get real lab and studio time as part of their training.</p>
-        </details>
+      <div>
+        <h3 style="font-size:20px;color:var(--off);">Safety commitment</h3>
+        <p style="color:var(--muted);font-size:14.5px;max-width:480px;"></p>
+        <ul class="safety-list">
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Every vehicle is GPS-tracked and roadworthy-inspected monthly</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Fully licensed and comprehensively insured for passenger transport</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Zero-tolerance sober-driving policy, enforced at shift start</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Dispatch monitors every active trip until drop-off is confirmed</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo"><span class="logo-zeal">ZEAL</span><span class="logo-effect">EFFECT</span></div>
-          <p>South Africa's creative media and music academy. Accredited. Affordable. Unstoppable.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="Instagram">IG</a>
-            <a href="#" aria-label="YouTube">YT</a>
-            <a href="#" aria-label="TikTok">TK</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>About</h4>
-          <ul>
-            <li><a href="about.html">About ZealEffect</a></li>
-            <li><a href="#vision">Vision &amp; Mission</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Courses</h4>
-          <ul>
-            <li><a href="courses.html#fulltime">Full-Time Programmes</a></li>
-            <li><a href="courses.html#parttime">Short Courses</a></li>
-            <li><a href="contact.html#apply">Apply Now</a></li>
-            <li><a href="#">Funding Options</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li>📍 Limpopo | Johannesburg | Online</li>
-            <li>📞 <a href="tel:+27609556679">+27 60 955 6679</a></li>
-            <li>✉️ <a href="mailto:queries@zealeffect.co.za">queries@zealeffect.co.za</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 ZealEffect Media Academy. All rights reserved.</p>
-        <p>QCTO Accredited | MICT SETA Certified</p>
-      </div>
-    </div>
-  </footer>
+<footer>
+  <div class="wrap foot-row">
+    <a href="index.html" class="logo"><span class="badge">MS</span> Mafosholo</a>
+    <p>© 2026 Mafosholo Shuttle. Licensed passenger transport operator, Limpopo, South Africa.</p>
+  </div>
+</footer>
 
-  <script src="js/navbar.js"></script>
-  <script src="js/animations.js"></script>
+<a href="https://wa.me/27835551024" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.348.652 4.542 1.786 6.414L4 29l7.79-1.748A11.93 11.93 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm6.14 16.94c-.264.744-1.517 1.42-2.09 1.487-.554.066-1.02.28-3.44-.72-2.918-1.207-4.775-4.05-4.918-4.24-.144-.19-1.175-1.562-1.175-2.98 0-1.418.744-2.114 1.008-2.403.264-.29.577-.362.77-.362.19 0 .385.002.552.01.177.008.415-.067.65.497.264.635.897 2.19.976 2.35.08.16.132.347.026.557-.106.21-.16.34-.317.523-.16.183-.334.408-.478.548-.16.157-.325.328-.14.643.185.316.822 1.36 1.766 2.203 1.213 1.083 2.236 1.42 2.552 1.58.316.157.502.132.687-.08.185-.21.79-.92.998-1.236.21-.316.42-.263.71-.157.29.105 1.84.868 2.156 1.025.316.158.527.237.605.37.08.132.08.762-.184 1.505z"/></svg>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>

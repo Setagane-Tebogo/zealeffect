@@ -1,256 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZealEffect | Media & Music Academy</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/hero.css" />
-  <link rel="stylesheet" href="css/sections.css" />
-  <link rel="stylesheet" href="css/cards.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mafoshololo Shuttle — Book Your Shuttle Today</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== TOP BAR ===== -->
-  <div class="topbar">
-    <span>📍 Limpopo | Johannesburg | Online</span>
-    <span>📞 <a href="tel:+27609556679">+27 60 955 6679</a></span>
-    <span>✉️ <a href="mailto:queries@zealeffect.co.za">queries@zealeffect.co.za</a></span>
-  </div>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
-    <a href="index.html" class="logo">
-      <img src="LOGO.png" alt="ZealEffect logo" class="logo-img" />
-    </a>
-
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li class="dropdown">
-        <a href="about.html">About Us ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="about.html#vision">Our Vision</a></li>
-          <li><a href="about.html#mission">Our Mission</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html#faq">FAQ</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="courses.html">Courses ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="courses.html#fulltime">Full-Time Programmes</a></li>
-          <li><a href="courses.html#parttime">Short Courses</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#">Student ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="#student-login">Student Portal</a></li>
-          <li><a href="#elearning">Elearning login</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html#apply" class="nav-cta">Apply Now</a></li>
+<header>
+  <div class="nav">
+    <a href="#home" class="logo"><span class="badge">MS</span> Mafosholoo</a>
+    <ul class="navlinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-content reveal">
-      <p class="hero-eyebrow">South Africa's Next-Level Academy</p>
-      <h1 class="hero-title">
-        <span class="line">Ignite Your</span>
-        <span class="line accent">Creative</span>
-        <span class="line">Career</span>
-      </h1>
-      <p class="hero-sub">
-        Media · Music · Film · Sound Engineering · Radio<br/>
-        Accredited qualifications. Real-world studios. Limitless potential.
-      </p>
-      <div class="hero-actions">
-        <a href="courses.html" class="btn btn-primary">Explore Courses</a>
-        <a href="about.html" class="btn btn-outline">About ZealEffect</a>
-      </div>
+    <div class="nav-actions">
+      <a class="nav-phone" href="tel:++27 60 194 8503">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +27 60 194 8503
+      </a>
+      <a href="book.html" class="btn btn-amber btn-sm">Book Now</a>
+      <button class="navtoggle" id="navToggle" aria-label="Menu">☰</button>
     </div>
-    <div class="hero-stats reveal-delay">
-      <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Graduates</span></div>
-      <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Programmes</span></div>
-      <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Years Running</span></div>
-      <div class="stat"><span class="stat-num">QCTO</span><span class="stat-label">Accredited</span></div>
-    </div>
-  </section>
+  </div>
+</header>
 
-  <!-- ===== ABOUT STRIP ===== -->
-  <section class="about-strip section-pad">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p class="section-eyebrow">Who We Are</p>
-          <h2 class="section-title">A Creative Hub for<br/><em>Media &amp; Music</em></h2>
-          <p>ZealEffect is a fast-growing, QCTO-accredited media and music academy built to unlock talent across South Africa. We offer affordable, nationally-recognised qualifications in sound engineering, film, radio, music production and more.</p>
-          <p>Whether you're an aspiring producer, content creator, director, or broadcast professional — ZealEffect gives you the tools, mentorship and studio time to make it happen.</p>
-          <a href="about.html" class="btn btn-primary">Our Full Story</a>
-        </div>
-        <div class="about-badges reveal-delay">
-          <div class="badge">QCTO Accredited</div>
-          <div class="badge">MICT SETA Certified</div>
-          <div class="badge">Dept. of Higher Ed</div>
-          <div class="badge">Steinberg International</div>
-          <div class="badge-image">
-            <div class="badge-icon">🎬</div>
-            <p>Real Studios.<br/>Real Experience.</p>
-          </div>
+<!-- HOME / HERO -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">24/7 Dispatch · Licensed &amp; Insured · Limpopo &amp; Beyond</div>
+        <h1>Book Your <span>Shuttle</span> Today</h1>
+        <p class="lead">Mafosholo Shuttle runs airport transfers, corporate accounts and long-distance trips across Limpopo and Gauteng with door-to-door servicer to door, from the moment you book to the moment you arrive.</p>
+        <div class="hero-ctas">
+          <a href="tel:+27601948503" class="btn btn-outline">Call dispatch</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ===== COURSES PREVIEW ===== -->
-  <section class="courses-preview section-pad dark-section">
-    <div class="container">
-      <p class="section-eyebrow center">What We Offer</p>
-      <h2 class="section-title center">Programmes That<br/><em>Build Careers</em></h2>
-      <div class="courses-grid">
-        <div class="course-card reveal">
-          <div class="course-icon">🎧</div>
-          <h3>Sound Engineering</h3>
-          <p>Live sound, studio recording, mixing and mastering — full-time and short course options.</p>
-          <a href="courses.html" class="card-link">Learn More →</a>
-        </div>
-        <div class="course-card reveal">
-          <div class="course-icon">🎬</div>
-          <h3>Film &amp; TV Production</h3>
-          <p>Pre-production to post — scriptwriting, directing, camera, editing and broadcast.</p>
-          <a href="courses.html" class="card-link">Learn More →</a>
-        </div>
-        <div class="course-card reveal">
-          <div class="course-icon">🎙️</div>
-          <h3>Radio Broadcasting</h3>
-          <p>On-air presenting, production, digital radio and community broadcasting.</p>
-          <a href="courses.html" class="card-link">Learn More →</a>
-        </div>
-        <div class="course-card reveal">
-          <div class="course-icon">🎹</div>
-          <h3>Music Production</h3>
-          <p>Beat making, composition, DAW mastery and music business essentials.</p>
-          <a href="courses.html" class="card-link">Learn More →</a>
-        </div>
-        <div class="course-card reveal">
-          <div class="course-icon">📹</div>
-          <h3>Video Technology</h3>
-          <p>Camera operation, video editing, motion graphics and content creation.</p>
-          <a href="courses.html" class="card-link">Learn More →</a>
-        </div>
-        <div class="course-card reveal">
-          <div class="course-icon">🎛️</div>
-          <h3>Studio Work</h3>
-          <p>Studio setup, signal flow, session management and artist relations.</p>
-          <a href="courses.html" class="card-link">Learn More →</a>
-        </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Why Mafosholo</div>
+      <h2>Fast, trusted shuttle service across SA</h2>
+      <p>From long-distance journeys to corporate accounts, every trip is coordinated from one dispatch desk and tracked until arrival.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l7 7-7 7-7-7 7-7z"/></svg>
+        <h3>24/7 dispatch</h3>
+        <p>Always on booking support keeps your trip confirmed, whether it’s a long-distance journey or a late return.</p>
       </div>
-      <div class="center" style="margin-top:3rem">
-        <a href="courses.html" class="btn btn-primary">View All Programmes</a>
+      <div class="why-card">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
+        <h3>Transparent pricing</h3>
+        <p>Route prices are published in advance, and custom quotes are available for group or long-distance travel.</p>
+      </div>
+      <div class="why-card">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+        <h3>Professional drivers</h3>
+        <p>Verified drivers, insured and assigned by proximity so your ride is ready when you need it.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== VISION & MISSION ===== -->
-  <section class="vm-section section-pad">
-    <div class="container">
-      <div class="vm-grid">
-        <div class="vm-card reveal">
-          <div class="vm-icon">🌍</div>
-          <h3>Our Vision</h3>
-          <p>To offer all — irrespective of race, religion or background — a quality education in media, music and creative technology. To be Africa's leading accredited creative academy.</p>
-        </div>
-        <div class="vm-card reveal">
-          <div class="vm-icon">🚀</div>
-          <h3>Our Mission</h3>
-          <p>To develop skilled, innovative individuals with a broad world view. Delivering market-relevant, community-targeted training that launches real careers in the creative industries.</p>
-        </div>
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Services</div>
+      <h2>Trips built around your plans</h2>
+      <p>Every booking is handled through the same form, with dispatch matching the best vehicle for your route.</p>
+    </div>
+    <div class="svc-grid">
+      
+      <div class="svc-card">
+        <div class="shield">01</div>
+        <h3>Event Shuttles</h3>
+        <p>Group transport for weddings, conferences and functions with coordinated pick-up points.</p>
+      </div>
+      <div class="svc-card">
+        <div class="shield">02</div>
+        <h3>Long-distance Trips</h3>
+        <p>Inter-city routes across Limpopo and Gauteng, with options for group or single-passenger travel.</p>
+      </div>
+     
+      <div class="svc-card">
+        <div class="shield">03</div>
+        <h3>Custom Charters</h3>
+        <p>Multi-stop or multi-day bookings tailored to your itinerary and passenger count.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== CTA BANNER ===== -->
-  <section class="cta-banner">
-    <div class="cta-orb"></div>
-    <div class="container cta-inner reveal">
-      <h2>Ready to Start Your Journey?</h2>
-      <p>Join a college that builds your foundation, connects you to internships, and supports your creative career every step of the way.</p>
-      <a href="contact.html#apply" class="btn btn-primary btn-lg">Apply Now</a>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-
-        <div class="footer-brand">
-          <div class="footer-logo"><span class="logo-zeal">ZEAL</span><span class="logo-effect">EFFECT</span></div>
-          <p>South Africa's creative media and music academy. Accredited. Affordable. Unstoppable.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="Instagram">IG</a>
-            <a href="#" aria-label="YouTube">YT</a>
-            <a href="#" aria-label="TikTok">TK</a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>About</h4>
-          <ul>
-            <li><a href="about.html">About ZealEffect</a></li>
-            <li><a href="about.html#vision">Vision &amp; Mission</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html#faq">FAQ</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Courses</h4>
-          <ul>
-            <li><a href="courses.html#fulltime">Full-Time Programmes</a></li>
-            <li><a href="courses.html#parttime">Short Courses</a></li>
-            <li><a href="contact.html#apply">Apply Now</a></li>
-            <li><a href="#">Funding Options</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li>📍 Limpopo | Johannesburg | Online</li>
-            <li>📞 <a href="tel:+27609556679">+27 60 955 6679</a></li>
-            <li>✉️ <a href="mailto:queries@zealeffect.co.za">queries@zealeffect.co.za</a></li>
-          </ul>
-        </div>
-
+<section class="services" id="quote">
+  <div class="wrap">
+    <div class="quote-cta">
+      <div>
+        <h3>Need a route not listed here?</h3>
+        <p>Get a custom quote for multi-stop trips, corporate accounts or long-distance transfers.</p>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 ZealEffect Media Academy. All rights reserved.</p>
-        <p>QCTO Accredited | MICT SETA Certified</p>
-      </div>
+      <a href="contact.html" class="btn btn-amber">Request a custom quote</a>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="js/navbar.js"></script>
-  <script src="js/animations.js"></script>
+<footer>
+  <div class="wrap foot-row">
+    <a href="index.html" class="logo"><span class="badge">MS</span> Mafosholo</a>
+    <p>© 2026 Mafosholo Shuttle. Licensed passenger transport operator, Limpopo, South Africa.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/+27 60 194 8503" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.348.652 4.542 1.786 6.414L4 29l7.79-1.748A11.93 11.93 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm6.14 16.94c-.264.744-1.517 1.42-2.09 1.487-.554.066-1.02.28-3.44-.72-2.918-1.207-4.775-4.05-4.918-4.24-.144-.19-1.175-1.562-1.175-2.98 0-1.418.744-2.114 1.008-2.403.264-.29.577-.362.77-.362.19 0 .385.002.552.01.177.008.415-.067.65.497.264.635.897 2.19.976 2.35.08.16.132.347.026.557-.106.21-.16.34-.317.523-.16.183-.334.408-.478.548-.16.157-.325.328-.14.643.185.316.822 1.36 1.766 2.203 1.213 1.083 2.236 1.42 2.552 1.58.316.157.502.132.687-.08.185-.21.79-.92.998-1.236.21-.316.42-.263.71-.157.29.105 1.84.868 2.156 1.025.316.158.527.237.605.37.08.132.08.762-.184 1.505z"/></svg>
+</a>
+
+<script src="script.js"></script>
+
 </body>
 </html>

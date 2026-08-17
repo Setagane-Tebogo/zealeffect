@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now — Mafosholo Shuttle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo"><span class="badge">MS</span> Mafosholo</a>
+    <ul class="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="nav-phone" href="tel:++27 60 194 8503">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +27 60 194 8503
+      </a>
+      <a href="book.html" class="btn btn-amber btn-sm">Book Now</a>
+      <button class="navtoggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section id="book">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Book Now</div>
+      <h2>Reserve your shuttle</h2>
+      <p>Fill in your trip details for an instant fare estimate, then confirm to see live booking status and get a WhatsApp or email confirmation.</p>
+    </div>
+
+    <div class="book-grid">
+      <form class="book-form" id="bookForm">
+        <div class="field-row">
+          <div class="field">
+            <label for="bName">Full name</label>
+            <input type="text" id="bName" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="bPhone">Phone number</label>
+            <input type="tel" id="bPhone" placeholder="+27 82 000 0000" required>
+          </div>
+        </div>
+
+        <div class="field-row" style="margin-top:12px;">
+          <div class="field">
+            <label for="bPickup">Pickup location</label>
+            <input type="text" id="bPickup" placeholder="e.g. Nkowakowa, Limpopo" required>
+          </div>
+          <div class="field">
+            <label for="bDrop">Destination</label>
+            <input type="text" id="bDrop" placeholder="e.g. Polokwane Gateway Airport" required>
+          </div>
+        </div>
+
+        <div class="field-row3" style="margin-top:12px;">
+          <div class="field">
+            <label for="bDate">Date</label>
+            <input type="date" id="bDate" required>
+          </div>
+          <div class="field">
+            <label for="bTime">Time</label>
+            <input type="time" id="bTime" required>
+          </div>
+          <div class="field">
+            <label for="bPassengers">Passengers</label>
+            <input type="number" id="bPassengers" min="1" max="20" value="1" required>
+          </div>
+        </div>
+
+        <div class="field" style="margin-top:12px;">
+          <label for="bNotes">Message</label>
+          <textarea id="bNotes" rows="2" placeholder="Optional"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-amber btn-block" style="margin-top:20px;">Book via WhatsApp</button>
+      </form>
+
+      <div class="status-panel" id="statusPanel" style="display:none;">
+        <h3>Booking Status</h3>
+        <p class="hint" id="statusHint"></p>
+        <div class="status-track">
+          <div class="status-line"></div>
+          <div class="status-line-fill" id="statusFill"></div>
+          <div class="status-step">
+            <div class="status-dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <h4>Booking Requested</h4>
+            <p>Your booking details have been received</p>
+          </div>
+          <div class="status-step">
+            <div class="status-dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <h4>Confirmed</h4>
+            <p>Dispatch center has confirmed your booking</p>
+          </div>
+          <div class="status-step">
+            <div class="status-dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <h4>Driver Assigned</h4>
+            <p>Your driver has been assigned and is en route</p>
+          </div>
+          <div class="status-step">
+            <div class="status-dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+            <h4>Arrived</h4>
+            <p>Your shuttle has arrived at pickup point</p>
+          </div>
+        </div>
+        
+        <div id="driverCard" class="driver-card">
+          <div class="driver-avatar" id="driverInitials"></div>
+          <div class="driver-info">
+            <b id="driverName"></b>
+            <span id="driverVehicle"></span>
+          </div>
+        </div>
+
+        <div class="confirm-actions" id="confirmActions" style="display:none;">
+          <a id="waConfirmBtn" href="#" class="btn btn-whatsapp btn-block">Confirm via WhatsApp</a>
+        </div>
+
+        <div class="toast-msg" id="confirmToast">✓ Your booking is confirmed! Check WhatsApp for live updates.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <a href="index.html" class="logo"><span class="badge">MS</span> Mafosholo</a>
+    <p>© 2026 Mafosholo Shuttle. Licensed passenger transport operator, Limpopo, South Africa.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/27835551024" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.348.652 4.542 1.786 6.414L4 29l7.79-1.748A11.93 11.93 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm6.14 16.94c-.264.744-1.517 1.42-2.09 1.487-.554.066-1.02.28-3.44-.72-2.918-1.207-4.775-4.05-4.918-4.24-.144-.19-1.175-1.562-1.175-2.98 0-1.418.744-2.114 1.008-2.403.264-.29.577-.362.77-.362.19 0 .385.002.552.01.177.008.415-.067.65.497.264.635.897 2.19.976 2.35.08.16.132.347.026.557-.106.21-.16.34-.317.523-.16.183-.334.408-.478.548-.16.157-.325.328-.14.643.185.316.822 1.36 1.766 2.203 1.213 1.083 2.236 1.42 2.552 1.58.316.157.502.132.687-.08.185-.21.79-.92.998-1.236.21-.316.42-.263.71-.157.29.105 1.84.868 2.156 1.025.316.158.527.237.605.37.08.132.08.762-.184 1.505z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
